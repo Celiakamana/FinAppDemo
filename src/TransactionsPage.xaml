@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinancialApp.TransactionsPage">
+
+    <Grid RowDefinitions="auto,*,auto">
+
+        <!-- Fixed Back Button Section -->
+        <Grid Grid.Row="0"
+              HeightRequest="80"
+              VerticalOptions="Start"
+              Padding="10"
+              Margin="0,10,0,50">
+
+            <Label x:Name="WelcomeLabel"
+                   Text="Welcome Back,"
+                   FontSize="Large"
+                   HorizontalOptions="Start"/>
+        </Grid>
+
+        <!-- Scrollable Main Content Section -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Padding="20" Spacing="15">
+
+                <!-- Search Bar with QR Icon on Same Row -->
+                <Grid ColumnDefinitions="*,auto" 
+                      HorizontalOptions="FillAndExpand" 
+                      Margin="0,10,0,100"
+                      ColumnSpacing="15">
+                    
+                    <SearchBar Placeholder="Search"
+                               HorizontalOptions="FillAndExpand" />
+
+                    <Button Text="MY QR"
+                            Style="{StaticResource StandardButton}"
+                            Clicked="OnQRCodeClicked"
+                            Grid.Column="1" />
+                </Grid>
+
+                <!-- Send Button -->
+                <Button Text="Send"
+                        Style="{StaticResource StandardButton}"
+                        Clicked="OnSendButtonClicked" />
+
+                <!-- Request Button -->
+                <Button Text="Request"
+                        Style="{StaticResource StandardButton}"
+                        Clicked="OnRequestButtonClicked" />
+
+                <!-- PayBill Button -->
+                <Button Text="PayBill"
+                        Style="{StaticResource StandardButton}"
+                        Clicked="OnPayBillButtonClicked" />
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Fixed Bottom Navigation Section -->
+        <Grid Grid.Row="2" 
+              Padding="10"
+              BackgroundColor="Transparent"
+              HorizontalOptions="Center"
+              VerticalOptions="End">
+
+            <HorizontalStackLayout HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Spacing="30">
+
+                <!-- Home Icon and Label -->
+                <VerticalStackLayout HorizontalOptions="Center"
+                                     VerticalOptions="Center">
+                    <Button Text="🏠"
+                            Style="{StaticResource EmojiButton}"
+                            Clicked="OnHomeIconClicked" />
+                    <Label Text="HOME"
+                           FontSize="14" 
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+
+                <!-- Transactions Icon and Label -->
+                <VerticalStackLayout HorizontalOptions="Center"
+                                     VerticalOptions="Center">
+                    <Button Text="🔄"
+                            Style="{StaticResource EmojiButton}"
+                            Clicked="OnTransactionIconClicked" />
+                    <Label Text="TRANSACTIONS"
+                           FontSize="14" 
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+
+                <!-- Notifications Icon and Label -->
+                <VerticalStackLayout HorizontalOptions="Center"
+                                     VerticalOptions="Center">
+                    <Button Text="🔔"
+                            Style="{StaticResource EmojiButton}"
+                            Clicked="OnNotificationIconClicked" />
+                    <Label Text="NOTIFICATIONS"
+                           FontSize="14" 
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+
+            </HorizontalStackLayout>
+        </Grid>
+
+    </Grid>
+</ContentPage>
