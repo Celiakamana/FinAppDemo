@@ -4,34 +4,32 @@
    The app allows users to perform essential financial operations such as money transfers, QR code transactions (both online and offline), and USSD-based services for users without reliable internet access.<br>
    The project uses Azure SQL as the database backend and incorporates various project management practices to simulate a real-world development environment.<br>
  # Technology used
-   Framework: .NET MAUI <br>
-   Language: C# <br>
-   Database: Azure SQL <br>
-   Version Control: Git <br>
-   Development Environment: Visual Studio 2022 <br>
+   - Framework: .NET MAUI <br>
+   - Language: C# <br>
+   - Database: Azure SQL <br>
+   - Project Management: Ms Project, Ms excel. <br>
+   - Version Control: Git <br>
+   - Development Environment: Visual Studio 2022 <br>
  # Project Artifacts
-   1. Application Source Code:
-   The src folder contains the full source code for the FinAppDemo app, which can be built and run locally using Visual Studio. <br>
-   2. Project Management Documents:
-     Located in the PM docs folder, these artifacts document the planning and progress of the project: <br>
-         >Gantt Chart: Tracks development timelines and milestones. <br>
-         >Project Burndown Chart: Visualizes sprint progress and remaining work. <br>
-         >Current Prototype Demo (Video): A walkthrough of the app's current functionality (Keep in mind I am still working on the app, so the video just showcases the current completed state). <br>
-   3. Database Scripts
-    The scripts folder: contains the script for recreating the structure of the database for users who want to recreate the database on their own azure instance or for useres with limmited internet connection that want to recreate the database loacally on SQl server express. <br>
-         >FinAppDemoSQLQuery.sql: A SQL script for stakeholders to recreate the database structure on their own Azure SQL instance or sql server express.<br>
+   1. **Application Source Code**: The src folder contains the full source code for the FinAppDemo app, which can be built and run locally using Visual Studio. <br>
+   2. **Project Management Documents**:Located in the PM docs folder, these artifacts document the planning and progress of the project: <br>
+         - Gantt Chart: Tracks development timelines and milestones. <br>
+         - Project Burndown Chart: Visualizes sprint progress and remaining work. <br>
+         - Current Prototype Demo (Video): A walkthrough of the app's current functionality (Keep in mind I am still working on the app, so the video just showcases the current completed state). <br>
+   3. **Database Scripts**: The scripts folder contains the script for recreating the structure of the database for users who want to recreate the database on their own azure instance or for useres with limmited internet connection that want to recreate the database loacally on SQl server express. <br>
+         - FinAppDemoSQLQuery.sql: A SQL script for stakeholders to recreate the database structure on their own Azure SQL instance or sql server express.<br>
 # Getting started
  # Prerequisites
    1. Visual Studio 2022 with the .NET MAUI workload installed.<br>
    2. NuGet Packages: Ensure the following packages are installed in your project (these can be managed via the NuGet Package Manager in Visual Studio): <br>
-            >Microsoft.Data.SqlClient <br>
-            >Microsoft.Extensions.Logging.Debug <br>
-            >Microsoft.Maui.Controls <br>
-            >Microsoft.Maui.Controls.Compatibility <br>
-            >Microsoft.NET.ILLink.Tasks <br>
-            >QRCoder <br>
-            >ZXing.Net.Maui <br>
-            >ZXing.Net.Maui.Controls <br>
+            - Microsoft.Data.SqlClient <br>
+            - Microsoft.Extensions.Logging.Debug <br>
+            - Microsoft.Maui.Controls <br>
+            - Microsoft.Maui.Controls.Compatibility <br>
+            - Microsoft.NET.ILLink.Tasks <br>
+            - QRCoder <br>
+            - ZXing.Net.Maui <br>
+            - ZXing.Net.Maui.Controls <br>
  # Steps to run locally
   1. Clone the repository: https://github.com/Celiakamana/FinAppDemo.git <br>
   2. Open the FinAppDemo.sln file (path:...\FinAppDemo\src) in Visual Studio.<br>
