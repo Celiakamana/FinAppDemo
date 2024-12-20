@@ -11,12 +11,12 @@
    - Version Control: Git <br>
    - Development Environment: Visual Studio 2022 <br>
  # Project Artifacts
-   1. **Application Source Code**: The src folder contains the full source code for the FinAppDemo app, which can be built and run locally using Visual Studio. <br>
+   1. **Application Source Code**: The src folder contains the full source code for the FinAppDemo app, which can be used to build  and run the app locally using Visual Studio. <br>
    2. **Project Management Documents**:Located in the PM docs folder, these artifacts document the planning and progress of the project: <br>
          - Gantt Chart: Tracks development timelines and milestones. <br>
          - Project Burndown Chart: Visualizes sprint progress and remaining work. <br>
          - Current Prototype Demo (Video): A walkthrough of the app's current functionality (Keep in mind I am still working on the app, so the video just showcases the current completed state). <br>
-   3. **Database Scripts**: The scripts folder contains the script for recreating the structure of the database for users who want to recreate the database on their own azure instance or for useres with limmited internet connection that want to recreate the database loacally on SQl server express. <br>
+   3. **Database Scripts**: The scripts folder contains the script for recreating the structure of the database for users who want to recreate the database on their own azure instance or for users with limmited internet connection that want to recreate the database loacally on SQl server express. <br>
          - FinAppDemoSQLQuery.sql: A SQL script for stakeholders to recreate the database structure on their own Azure SQL instance or sql server express.<br>
 # Getting started
  # Prerequisites
